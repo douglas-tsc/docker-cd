@@ -1,7 +1,7 @@
 # CONTINUOUS DELIVERY
 # IMPORTANTE: Caso você utilize Git Bash (Windows) como linha de comando, execute o script com 'MSYS_NO_PATHCONV=1' como prefixo.
 # Exemplo: MSYS_NO_PATHCONV=1 . cd.sh
-clear
+clear 
 
 # Variáveis de configuração geral
 export BRANCH=$(echo ${BRANCH:-$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')} | sed 's/refs\/heads\///g' | sed 's/refs\/tags\///g' | sed 's/\//-/g')
